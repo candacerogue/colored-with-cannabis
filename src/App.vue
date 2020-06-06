@@ -52,8 +52,13 @@ html, body {
 
 @media only screen and (max-width: 600px) {
 
+  #app {
+    margin: 0 auto;
+  }
+
   .logo {
     width: 325px;
+    margin-left: 10%;
     height: auto;
     order: 1;
   }
