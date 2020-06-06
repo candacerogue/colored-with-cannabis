@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Colored With Cannabis logo" src="./assets/CWC Logo.svg" class="logo">
+    <HelloWorld/>
   </div>
 </template>
 
@@ -17,6 +17,9 @@ export default {
 </script>
 
 <style>
+html, body {
+  background-color: black;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -24,5 +27,12 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  position: relative;
 }
+
+.logo {
+    width: 525px;
+    height: auto;
+    order: 1;
+  }
 </style>
