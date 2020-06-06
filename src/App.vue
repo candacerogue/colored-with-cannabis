@@ -1,17 +1,22 @@
 <template>
   <div id="app">
     <img alt="Colored With Cannabis logo" src="./assets/CWC Logo.svg" class="logo">
-    <HelloWorld/>
+    <div class="container">
+      <HelloWorld/>
+      <!-- <Initiatives/> -->
+    </div>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+// import Initiatives from './components/Initiatives.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    // Initiatives
   }
 }
 </script>
@@ -25,9 +30,11 @@ html, body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
   margin-top: 60px;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 40%;
 }
 
 .logo {
@@ -35,4 +42,20 @@ html, body {
     height: auto;
     order: 1;
   }
+
+.container {
+  order: 2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .logo {
+    width: 325px;
+    height: auto;
+    order: 1;
+  }
+}
 </style>

@@ -49,11 +49,8 @@ export default {
 <style scoped>
 
 .hello {
-  /* display: flex; */
   justify-items: center;
   max-width: 525px;
-  position: absolute;
-  left: 30%;
   order: 2;
 }
 
@@ -63,7 +60,7 @@ export default {
   background-image: url(../assets/Content-Border.svg);
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 500px 500px;
+  background-size: contain;
 }
 
 #mc_embed_signup{
